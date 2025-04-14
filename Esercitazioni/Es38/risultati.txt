@@ -1,0 +1,8 @@
+Elenco studenti:
+Mario Rossi: 28
+Lucia Bianchi: 30
+Giovanni Verdi: 25
+Anna Neri: 27
+
+Numero studenti: 4
+Media voti: 27,50
