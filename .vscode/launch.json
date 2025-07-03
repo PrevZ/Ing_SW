@@ -1,0 +1,34 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "GestionePlaylist",
+            "request": "launch",
+            "mainClass": "GestionePlaylist",
+            "projectName": "Ing_SW_af9e1af"
+        },
+        {
+            "type": "java",
+            "name": "Run Current Exercise",
+            "request": "launch",
+            "mainClass": "${fileBasenameNoExtension}",
+            "cwd": "${fileDirname}",
+            "classPaths": [
+                "${fileDirname}"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "type": "java",
+            "name": "Run Main in Current Directory",
+            "request": "launch",
+            "mainClass": "Main",
+            "cwd": "${fileDirname}",
+            "classPaths": [
+                "${fileDirname}"
+            ],
+            "console": "integratedTerminal"
+        }
+    ]
+}
