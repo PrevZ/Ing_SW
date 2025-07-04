@@ -253,3 +253,18 @@ task listExercises {
         }
     }
 }
+
+// Task generico per eseguire qualsiasi esercizio
+task runSingleExercise(type: Exec) {
+    group = 'esercizi'
+    description = 'Esegue un esercizio specificato con -Pexercise=EsXX'
+    
+    doFirst {
+        if (!project.hasProperty('exercise')) {
+            throw new GradleException('Specifica l\'esercizio con -Pexercise=EsXX')
+        }
+        def exerciseDir = project.property('exercise')
+        workingDir = rootProject.projectDir
+        commandLine = ['powershell', '-ExecutionPolicy', 'Bypass', '-File', 'compila_esercizio.ps1', exerciseDir]
+    }
+}
