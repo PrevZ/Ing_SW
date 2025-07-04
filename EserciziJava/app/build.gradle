@@ -39,139 +39,140 @@ task runExercise(type: JavaExec) {
         // Determina la classe principale basata sull'esercizio
         switch(exerciseNum) {
             case 'Es01':
-                main = 'HelloWorld'
+                main = 'Es01.Main'
                 break
             case 'Es02':
-                main = 'SommaNumeri'
+                main = 'Es02.Main'
                 break
             case 'Es03':
-                main = 'CalcolaArea'
+                main = 'Es03.Main'
                 break
             case 'Es04':
-                main = 'NumeriPariDispari'
+                main = 'Es04.Main'
                 break
             case 'Es05':
-                main = 'Calcolatrice'
+                main = 'Es05.Main'
                 break
             case 'Es06':
-                main = 'GestioneStudenti'
+                main = 'Es06.Main'
                 break
             case 'Es07':
-                main = 'ContatoreParole'
+                main = 'Es07.Main'
                 break
             case 'Es08':
-                main = 'GestioneInventario'
+                main = 'Es8.Main'
                 break
             case 'Es09':
-                main = 'TestPersona'
+                main = 'Es9.Main'
                 break
             case 'Es10':
-                main = 'Calcolatrice'
+                main = 'Es10.Main'
                 break
             case 'Es11':
-                main = 'MagazzinoProdotti'
+                main = 'Es11.Main'
                 break
             case 'Es12':
-                main = 'RegistroPresenze'
+                main = 'Es12.Main'
                 break
             case 'Es13':
-                main = 'TestMacchine'
+                main = 'Es13.RubricaTelefonica'
                 break
             case 'Es14':
-                main = 'ParoleLunghe'
+                main = 'Es14.SommaDaInput'
                 break
             case 'Es15':
-                main = 'Biblioteca'
+                main = 'Es15.TestForme'
                 break
             case 'Es16':
-                main = 'TestStack'
+                main = 'Es16.RegistroStudenti'
                 break
             case 'Es17':
-                main = 'Scacchiera'
+                main = 'Es17.FiltroNumeriPari'
                 break
             case 'Es18':
-                main = 'OrdinaParole'
+                main = 'Es18.TestAnimali'
                 break
             case 'Es19':
-                main = 'TestPagabile'
+                main = 'Es19.TestContatore'
                 break
             case 'Es20':
-                main = 'DiarioDiBordo'
+                main = 'Es20.ClassificaSportiva'
                 break
             case 'Es21':
-                main = 'CinemaPrenotazioni'
+                main = 'Es21.TestPersona'
                 break
             case 'Es22':
-                main = 'GestioneOrdini'
+                main = 'Es22.Calcolatrice'
                 break
             case 'Es23':
-                main = 'RegistroMedico'
+                main = 'Es23.MagazzinoProdotti'
                 break
             case 'Es24':
-                main = 'GestioneCatalogo'
+                main = 'Es24.RegistroPresenze'
                 break
             case 'Es25':
-                main = 'SistemaBancario'
+                // Es25 non ha una classe Main
+                throw new GradleException("Es25 non ha una classe principale eseguibile")
                 break
             case 'Es26':
-                main = 'GestioneFileStudenti'
+                main = 'Es26.ParoleLunghe'
                 break
             case 'Es27':
-                main = 'ParserJSONManuale'
+                main = 'Es27.Biblioteca'
                 break
             case 'Es28':
-                main = 'MagazzinoMulticlasse'
+                main = 'Es28.TestStack'
                 break
             case 'Es29':
-                main = 'GestionePlaylist'
+                main = 'Es29.Scacchiera'
                 break
             case 'Es30':
-                main = 'RubricaAvanzata'
+                main = 'Es30.OrdinaParole'
                 break
             case 'Es31':
-                main = 'SistemaLogin'
+                main = 'Es31.TestPagabile'
                 break
             case 'Es32':
-                main = 'TestLogger'
+                main = 'Es32.DiarioDiBordo'
                 break
             case 'Es33':
-                main = 'GestioneParcheggio'
+                main = 'Es33.CinemaPrenotazioni'
                 break
             case 'Es34':
-                main = 'Main' // o il nome della classe principale
+                main = 'Es34.GestioneOrdini'
                 break
             case 'Es35':
-                main = 'Main'
+                main = 'Es35.RegistroMedico'
                 break
             case 'Es36':
-                main = 'Main'
+                main = 'Es36.GestioneCatalogo'
                 break
             case 'Es37':
-                main = 'Main'
+                main = 'Es37.SistemaBancario'
                 break
             case 'Es38':
-                main = 'Main'
+                main = 'Es38.GestioneFileStudenti'
                 break
             case 'Es39':
-                main = 'Main'
+                main = 'Es39.ParserJSONManuale'
                 break
             case 'Es40':
-                main = 'Main'
+                main = 'Es40.MagazzinoMulticlasse'
                 break
             case 'Es41':
-                main = 'GestionePlaylist'
+                main = 'Es41.GestionePlaylist'
                 break
             case 'Es42':
-                main = 'RubricaAvanzata'
+                main = 'Es42.RubricaAvanzata'
                 break
             case 'Es43':
-                main = 'SistemaLogin'
+                main = 'Es43.SistemaLogin'
                 break
             case 'Es44':
-                main = 'TestLogger'
+                main = 'Es44.TestLogger'
                 break
             case 'Es45':
-                main = 'GestioneParcheggio'
+                main = 'Es45.GestioneParcheggio'
                 break
             default:
                 main = 'Main'
@@ -200,51 +201,51 @@ task listExercises {
     doLast {
         println "Esercizi disponibili:"
         def exercises = [
-            'Es01': 'Sistema di Veicoli',
-            'Es02': 'Sistema Biblioteca',
-            'Es03': 'Gestione Animali',
-            'Es04': 'Sistema Aziendale',
-            'Es05': 'Calcolatrice Base',
-            'Es06': 'Gestione Studenti',
-            'Es07': 'Contatore Parole',
-            'Es08': 'Gestione Inventario',
-            'Es09': 'Incapsulamento Base',
-            'Es10': 'Calcolatrice con switch',
-            'Es11': 'Magazzino Prodotti',
-            'Es12': 'Registro Presenze',
-            'Es13': 'Macchina Astratta',
-            'Es14': 'Parole Lunghe',
-            'Es15': 'Biblioteca',
-            'Es16': 'Stack Generico',
-            'Es17': 'Scacchiera',
-            'Es18': 'Ordina Parole',
-            'Es19': 'Interfaccia Pagabile',
-            'Es20': 'Diario di Bordo',
-            'Es21': 'Sistema Prenotazione Cinema',
-            'Es22': 'Gestione Ordini',
-            'Es23': 'Magazzino Prodotti',
-            'Es24': 'Registro Presenze',
-            'Es25': 'Macchina Astratta',
-            'Es26': 'Parole Lunghe',
-            'Es27': 'Biblioteca',
-            'Es28': 'Stack Generico',
-            'Es29': 'Scacchiera',
-            'Es30': 'Ordina Parole',
-            'Es31': 'Interfaccia Pagabile',
-            'Es32': 'Diario di Bordo',
-            'Es33': 'Sistema Prenotazione Cinema',
-            'Es34': 'Gestione Ordini',
-            'Es35': 'Registro Medico',
-            'Es36': 'Catalogo Prodotti',
-            'Es37': 'Sistema Banca',
-            'Es38': 'Gestione File Studenti',
-            'Es39': 'Parser JSON Manuale',
-            'Es40': 'Magazzino Multiclasse',
-            'Es41': 'Gestione Playlist',
-            'Es42': 'Rubrica Avanzata',
-            'Es43': 'Sistema Login',
-            'Es44': 'File Logger',
-            'Es45': 'Parcheggio'
+            'Es01': 'Sistema di Veicoli (interfacce, polimorfismo)',
+            'Es02': 'Sistema Biblioteca (ereditarietà, gestione materiali)',
+            'Es03': 'Gestione Animali (classi astratte, polimorfismo)',
+            'Es04': 'Sistema Aziendale (ereditarietà, calcolo stipendi)',
+            'Es05': 'Sistema Prenotazioni Viaggi (interfacce, eccezioni)',
+            'Es06': 'Sistema Pagamenti (interfacce, gestione eccezioni)',
+            'Es07': 'Framework Ordinamento (Strategy pattern, Sortable)',
+            'Es08': 'Sistema Biblioteca Avanzato (prestiti, gestione stato)',
+            'Es09': 'Sistema Universitario (modellazione complessa, interfacce)',
+            'Es10': 'Catalogo Multimediale (polimorfismo, interfacce)',
+            'Es11': 'Sistema Ospedaliero (associazioni complesse)',
+            'Es12': 'Sistema Sviluppo Software (ereditarietà, team)',
+            'Es13': 'Rubrica Telefonica (gestione contatti)',
+            'Es14': 'Somma da Input (args[], parsing, eccezioni)',
+            'Es15': 'Forme Geometriche (classi astratte, calcolo area)',
+            'Es16': 'Registro Studenti (ArrayList, calcolo medie)',
+            'Es17': 'Filtro Numeri Pari (cicli, array, filtri)',
+            'Es18': 'Animali Semplificati (classi astratte, versi)',
+            'Es19': 'Contatore Generico (generics, tipi parametrizzati)',
+            'Es20': 'Classifica Sportiva (ordinamento, squadre)',
+            'Es21': 'Gestione Persona (incapsulamento, costruttori)',
+            'Es22': 'Calcolatrice CLI (parsing args, switch-case)',
+            'Es23': 'Magazzino Prodotti (gestione inventario)',
+            'Es24': 'Registro Presenze (Array 2D)',
+            'Es25': 'Sistema Macchine (ereditarietà veicoli)',
+            'Es26': 'Parole Lunghe (Array + Condizioni)',
+            'Es27': 'Biblioteca (ArrayList + Oggetti)',
+            'Es28': 'Stack Personalizzato (strutture dati, generics)',
+            'Es29': 'Scacchiera (Array 2D + Logica)',
+            'Es30': 'Ordinamento Parole (algoritmi ordinamento)',
+            'Es31': 'Interfaccia Pagabile (Interfacce)',
+            'Es32': 'Diario di Bordo (ArrayList + Date)',
+            'Es33': 'Sistema di Prenotazione Cinema (OOP + ArrayList + Logica)',
+            'Es34': 'Gestione Ordini con Interfacce (Interfaccia + ArrayList + Polimorfismo)',
+            'Es35': 'Registro Medico (visite, pazienti, medici)',
+            'Es36': 'Gestione Catalogo Prodotti con Filtri (Generics + Funzioni + Filtri)',
+            'Es37': 'Sistema Banca (Classi astratte + Ereditarietà + Overriding)',
+            'Es38': 'Gestione File Studenti (File I/O + ArrayList + Parsing)',
+            'Es39': 'Parser JSON Manuale (Stringhe + Logica + ArrayList)',
+            'Es40': 'Magazzino Multiclasse (prodotti categorizzati)',
+            'Es41': 'Gestione Playlist (ArrayList + Oggetti + Metodi Statici)',
+            'Es42': 'Rubrica con Ricerca Avanzata (ArrayList + Stream-like)',
+            'Es43': 'Sistema di Login (HashMap + Stringhe + Sicurezza base)',
+            'Es44': 'File Logger (FileWriter + Singleton + Data)',
+            'Es45': 'Gestione Parcheggio (prenotazioni, posti auto)'
         ]
         
         exercises.each { key, value ->
